@@ -83,6 +83,7 @@ Contributors
 ------------
 
 -  Alexis de Lattre <alexis.delattre@akretion.com>
+-  Esteve Blanch <esteve@esteveblanch.cat>
 
 Maintainers
 -----------
