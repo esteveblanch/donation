@@ -17,24 +17,27 @@ Donation Direct Debit
     :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
     :alt: License: AGPL-3
 .. |badge3| image:: https://img.shields.io/badge/github-OCA%2Fdonation-lightgray.png?logo=github
-    :target: https://github.com/OCA/donation/tree/16.0/donation_direct_debit
+    :target: https://github.com/OCA/donation/tree/17.0/donation_direct_debit
     :alt: OCA/donation
 .. |badge4| image:: https://img.shields.io/badge/weblate-Translate%20me-F47D42.png
-    :target: https://translation.odoo-community.org/projects/donation-16-0/donation-16-0-donation_direct_debit
+    :target: https://translation.odoo-community.org/projects/donation-17-0/donation-17-0-donation_direct_debit
     :alt: Translate me on Weblate
 .. |badge5| image:: https://img.shields.io/badge/runboat-Try%20me-875A7B.png
-    :target: https://runboat.odoo-community.org/builds?repo=OCA/donation&target_branch=16.0
+    :target: https://runboat.odoo-community.org/builds?repo=OCA/donation&target_branch=17.0
     :alt: Try me on Runboat
 
 |badge1| |badge2| |badge3| |badge4| |badge5|
 
-With this module, when you validate a donation that has a payment method linked to a SEPA direct debit payment mode:
+With this module, when you validate a donation that has a payment method
+linked to a SEPA direct debit payment mode:
 
-* if a draft direct debit order for SEPA direct debit already exists, a new payment line linked to the donation is added to it,
+-  if a draft direct debit order for SEPA direct debit already exists, a
+   new payment line linked to the donation is added to it,
+-  otherwise, a new SEPA direct debit order is created and a payment
+   line linked to the donation is added to it.
 
-* otherwise, a new SEPA direct debit order is created and a payment line linked to the donation is added to it.
-
-A message is added in the chatter of the donation with a link to the payment order.
+A message is added in the chatter of the donation with a link to the
+payment order.
 
 **Table of contents**
 
@@ -44,16 +47,23 @@ A message is added in the chatter of the donation with a link to the payment ord
 Configuration
 =============
 
-In the menu *Invoicing > Configuration > Management > Payment Modes*, make sure that you have a payment mode for SEPA Direct Debit that has the donation option active.
+In the menu *Invoicing > Configuration > Management > Payment Modes*,
+make sure that you have a payment mode for SEPA Direct Debit that has
+the donation option active.
 
 Usage
 =====
 
-On the donor (i.e. partner) form, create a bank account (IBAN) and create a related mandate. Validate the mandate.
+On the donor (i.e. partner) form, create a bank account (IBAN) and
+create a related mandate. Validate the mandate.
 
-Create a new donation for that donor. Select the SEPA direct debit payment mode: a new required field *Mandate* will appear: select the mandate of the donor. Create the donation line(s).
+Create a new donation for that donor. Select the SEPA direct debit
+payment mode: a new required field *Mandate* will appear: select the
+mandate of the donor. Create the donation line(s).
 
-Validate the donation. In the chatter of the donation, you will see a message about the debit order that has been created or updated with a link to it. You can then click on the link and finalize the debit order.
+Validate the donation. In the chatter of the donation, you will see a
+message about the debit order that has been created or updated with a
+link to it. You can then click on the link and finalize the debit order.
 
 Bug Tracker
 ===========
@@ -61,7 +71,7 @@ Bug Tracker
 Bugs are tracked on `GitHub Issues <https://github.com/OCA/donation/issues>`_.
 In case of trouble, please check there if your issue has already been reported.
 If you spotted it first, help us to smash it by providing a detailed and welcomed
-`feedback <https://github.com/OCA/donation/issues/new?body=module:%20donation_direct_debit%0Aversion:%2016.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**>`_.
+`feedback <https://github.com/OCA/donation/issues/new?body=module:%20donation_direct_debit%0Aversion:%2017.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**>`_.
 
 Do not contact contributors directly about support or help with technical issues.
 
@@ -69,17 +79,17 @@ Credits
 =======
 
 Authors
-~~~~~~~
+-------
 
 * Akretion
 
 Contributors
-~~~~~~~~~~~~
+------------
 
-* Alexis de Lattre <alexis.delattre@akretion.com>
+-  Alexis de Lattre <alexis.delattre@akretion.com>
 
 Maintainers
-~~~~~~~~~~~
+-----------
 
 This module is maintained by the OCA.
 
@@ -99,6 +109,6 @@ Current `maintainer <https://odoo-community.org/page/maintainer-role>`__:
 
 |maintainer-alexis-via| 
 
-This module is part of the `OCA/donation <https://github.com/OCA/donation/tree/16.0/donation_direct_debit>`_ project on GitHub.
+This module is part of the `OCA/donation <https://github.com/OCA/donation/tree/17.0/donation_direct_debit>`_ project on GitHub.
 
 You are welcome to contribute. To learn how please visit https://odoo-community.org/page/Contribute.
