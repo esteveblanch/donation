@@ -22,7 +22,8 @@ class ResCompany(models.Model):
         string="Donation by Debit Order Account",
         help="Transfer account for donations by debit order. "
         "Leave empty if you don't handle donations by debit order on this bank account."
-        "This account must be a receivable account, otherwise the debit order will not work.",
+        "This account must be a receivable account, otherwise the debit order "
+        "will not work.",
     )
 
     @api.constrains("donation_debit_order_account_id")

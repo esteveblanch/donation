@@ -44,10 +44,8 @@ class DonationDonation(models.Model):
                 self.mandate_id = mandate
 
     # Mathod inherited from donation module
-    # TODO migration: remove 'journal' argument and use self.payment_mode_id.fixed_journal_id
-    def _prepare_counterpart_move_line(
-        self, total_company_cur, total_currency, journal
-    ):
+    def _prepare_counterpart_move_line(self, total_company_cur, total_currency):
+        journal = self.payment_mode_id.fixed_journal_id
         vals = super()._prepare_counterpart_move_line(
             total_company_cur, total_currency, journal
         )

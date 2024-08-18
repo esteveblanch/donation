@@ -16,9 +16,10 @@
                 <field
                     name="mandate_id"
                     options="{'no_create_edit': True}"
-                    attrs="{'required': [('mandate_required', '=', True)], 'invisible': [('mandate_required', '=', False)]}"
+                    required="mandate_required==True"
+                    invisible="mandate_required==False"
                 />
-                <field name="mandate_required" invisible="1" />
+                <field name="mandate_required" column_invisible="1" />
         </field>
     </field>
 </record>
