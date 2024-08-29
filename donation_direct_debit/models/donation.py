@@ -47,7 +47,7 @@ class DonationDonation(models.Model):
     def _prepare_counterpart_move_line(self, total_company_cur, total_currency):
         journal = self.payment_mode_id.fixed_journal_id
         vals = super()._prepare_counterpart_move_line(
-            total_company_cur, total_currency, journal
+            total_company_cur, total_currency
         )
         if not self.bank_statement_line_id and self.payment_mode_id.payment_order_ok:
             if not self.company_id.donation_debit_order_account_id:
