@@ -6,15 +6,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0-20240711\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-09-05 21:36+0000\n"
-"Last-Translator: Ivorra78 <informatica@totmaterial.es>\n"
-"Language-Team: none\n"
-"Language: es\n"
+"POT-Creation-Date: 2024-08-30 16:10+0000\n"
+"PO-Revision-Date: 2024-08-30 16:10+0000\n"
+"Last-Translator: Esteve Blanch <esteve@esteveblanch.cat>\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. module: donation_direct_debit
 #. odoo-python
@@ -25,9 +24,8 @@ msgid ""
 "model=\"account.payment.order\" data-oe-"
 "id=\"%(payorder_id)d\">%(payorder)s</a> has been automatically created"
 msgstr ""
-"Se ha creado automáticamente un nuevo borrador de orden de domiciliación "
-"bancaria <a href=\"#\" data-oe-model=\"account.paid.order\" data-oe-id=\""
-"%(payorder_id)d\">%(payorder)s</a>"
+"S'ha creat automàticament un esborrany de l'ordre de domiciliació <a href=\"#\" "
+"data-oe-model=\"account.payment.order\" data-oe-id=\"%(payorder_id)d\">%(payorder)s</a>"
 
 #. module: donation_direct_debit
 #. odoo-python
@@ -38,8 +36,8 @@ msgid ""
 " debit order <a href=\"#\" data-oe-model=\"account.payment.order\" data-oe-"
 "id=\"%(payorder_id)d\">%(payorder)s</a>."
 msgstr ""
-"Se ha añadido automáticamente una nueva línea de pago al borrador de orden "
-"de domiciliación existente <a href=\"#\" data-oe-model=\"account.payment.order\" "
+"S'ha afegit automàticament una nova línia de pagament a l'esborrany existent "
+"de l'ordre de domiciliació directa <a href=\"#\" data-oe-model=\"account.payment.order\" "
 "data-oe-id=\"%(payorder_id)d\">%(payorder)s</a>."
 
 #. module: donation_direct_debit
@@ -48,53 +46,53 @@ msgid ""
 "Activate this option if this payment method requires your customer to sign a"
 " direct debit mandate with your company."
 msgstr ""
-"Active esta opción si este método de pago requiere que su cliente firme un "
-"mandato de domiciliación bancaria con su compañía."
+"Activa aquesta opció si aquest mètode de pagament requereix que el teu client "
+"signi un mandat de domiciliació bancària amb la teva empresa."
 
 #. module: donation_direct_debit
 #: model:ir.model,name:donation_direct_debit.model_res_company
 msgid "Companies"
-msgstr ""
+msgstr "Empreses"
 
 #. module: donation_direct_debit
 #: model:ir.model,name:donation_direct_debit.model_res_config_settings
 msgid "Config Settings"
-msgstr ""
+msgstr "Paràmetres de configuració"
 
 #. module: donation_direct_debit
 #: model:ir.model,name:donation_direct_debit.model_donation_donation
 msgid "Donation"
-msgstr "Donación"
+msgstr "Donació"
 
 #. module: donation_direct_debit
 #: model:ir.model.fields,field_description:donation_direct_debit.field_res_company__donation_debit_order_account_id
 #: model:ir.model.fields,field_description:donation_direct_debit.field_res_config_settings__donation_debit_order_account_id
 msgid "Donation by Debit Order Account"
-msgstr ""
+msgstr "Compte de donacions per ordre de debit (deutors)"
 
 #. module: donation_direct_debit
 #: model:ir.model.fields,field_description:donation_direct_debit.field_donation_donation__mandate_id
 msgid "Mandate"
-msgstr "Mandato"
+msgstr "Mandat"
 
 #. module: donation_direct_debit
 #: model:ir.model.fields,field_description:donation_direct_debit.field_donation_donation__mandate_required
 msgid "Mandate Required"
-msgstr "Requiere Mandato"
+msgstr "Mandat requerit"
 
 #. module: donation_direct_debit
 #. odoo-python
 #: code:addons/donation_direct_debit/models/donation.py:0
 #, python-format
 msgid "Mandate is missing on donation '%s'."
-msgstr "Falta el mandato en la donación '%s'."
+msgstr "Falta el mandat en la donació '%s'."
 
 #. module: donation_direct_debit
 #. odoo-python
 #: code:addons/donation_direct_debit/models/donation.py:0
 #, python-format
 msgid "Missing Donation by Debit Order Account on company '%s'."
-msgstr ""
+msgstr "Manca el compte de Donació per Ordre de Dèbit a l'empresa '%s'."
 
 #. module: donation_direct_debit
 #. odoo-python
@@ -105,8 +103,9 @@ msgid ""
 "href=\"#\" data-oe-model=\"donation.donation\" data-oe-"
 "id=\"%(donation_id)d\">%(donation)s</a>."
 msgstr ""
-"Orden de pago creada automáticamente al validar la donación <a href=\"#\" data-"
-"oe-model=\"donation.donation\" data-oe-id=\"%(donation_id)d\">%(donation)s</a>."
+"Ordre de pagament creada automàticament després de la validació de la donació "
+"<a href=\"#\" data-oe-model=\"donation.donation\" data-oe-id=\"%(donation_id)d\">"
+"%(donation)s</a>."
 
 #. module: donation_direct_debit
 #. odoo-python
@@ -117,6 +116,9 @@ msgid ""
 "receivable account, but the account '%(account)s' is configured with account"
 " type '%(account_type)s'."
 msgstr ""
+"El Compte de Donació per Ordre de Dèbit de l'empresa '%(company)s' ha de "
+"ser un compte cobrable, però el compte '%(account)s' està configurat amb el "
+"tipus de compte '%(account.type)s'."
 
 #. module: donation_direct_debit
 #. odoo-python
@@ -126,6 +128,8 @@ msgid ""
 "The Donation by Debit Order Account of company '%(company)s' must be "
 "reconciliable, but the account '%(account)s' is not reconciliable."
 msgstr ""
+"El Compte de Donació per Ordre de Dèbit de l'empresa '%(company)s' ha "
+"de ser reconciliable, però el compte '%(account)s' no és reconciliable."
 
 #. module: donation_direct_debit
 #: model:ir.model.fields,help:donation_direct_debit.field_res_company__donation_debit_order_account_id
@@ -135,6 +139,9 @@ msgid ""
 "handle donations by debit order on this bank account.This account must be a "
 "receivable account, otherwise the debit order will not work."
 msgstr ""
+"Compte de transferència de donatius per ordre de dèbit. Deixa-ho buit si no "
+"maneges donacions per ordre de dèbit en aquest compte bancari. Aquest compte "
+"ha de ser un compte cobrable, en cas contrari l'ordre de dèbit no funcionarà."
 
 #. module: donation_direct_debit
 #. odoo-python
@@ -144,5 +151,5 @@ msgid ""
 "You cannot cancel a donation which is linked to a payment line in a direct "
 "debit order. Remove it from the following direct debit order: %s."
 msgstr ""
-"No puede anular una donación vinculada a una línea de pago de una orden de "
-"domiciliación bancaria. Elimínelo de la siguiente orden de domiciliación: %s."
+"No podeu cancel·lar un donatiu que està vinculat a una línia de pagament en "
+"una ordre de domiciliació bancària. Elimina-ho de la següent ordre de domiciliació: %s."

@@ -4,7 +4,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 16.0\n"
+"Project-Id-Version: Odoo Server 17.0-20240711\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2024-05-29 12:36+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
@@ -21,11 +21,12 @@ msgstr ""
 #: code:addons/donation_direct_debit/models/donation.py:0
 #, python-format
 msgid ""
-"A new draft direct debit order <a href=# data-oe-model=account.payment.order "
-"data-oe-id=%(payorder_id)d>%(payorder)s</a> has been automatically created"
+"A new draft direct debit order <a href=\"#\" data-oe-"
+"model=\"account.payment.order\" data-oe-"
+"id=\"%(payorder_id)d\">%(payorder)s</a> has been automatically created"
 msgstr ""
-"Una nuova bozza ordine di addebito diretto <a href=# data-oe-model=account."
-"payment.order data-oe-id=%(payorder_id)d>%(payorder)s</a> è stata creata "
+"Una nuova bozza ordine di addebito diretto <a href=\"#\" data-oe-model=\"account."
+"payment.order\" data-oe-id=\"%(payorder_id)d\">%(payorder)s</a> è stata creata "
 "automaticamente"
 
 #. module: donation_direct_debit
@@ -33,19 +34,19 @@ msgstr ""
 #: code:addons/donation_direct_debit/models/donation.py:0
 #, python-format
 msgid ""
-"A new payment line has been automatically added to the existing draft direct "
-"debit order <a href=# data-oe-model=account.payment.order data-oe-id="
-"%(payorder_id)d>%(payorder)s</a>."
+"A new payment line has been automatically added to the existing draft direct"
+" debit order <a href=\"#\" data-oe-model=\"account.payment.order\" data-oe-"
+"id=\"%(payorder_id)d\">%(payorder)s</a>."
 msgstr ""
 "Una nuova riga di pagamento è stata aggiunta automaticamente alla bozza "
-"ordine di addebito diretto <a href=# data-oe-model=account.payment.order "
-"data-oe-id=%(payorder_id)d>%(payorder)s</a>."
+"ordine di addebito diretto <a href=\"#\" data-oe-model=\"account.payment.order\" "
+"data-oe-id=\"%(payorder_id)d\">%(payorder)s</a>."
 
 #. module: donation_direct_debit
 #: model:ir.model.fields,help:donation_direct_debit.field_donation_donation__mandate_required
 msgid ""
-"Activate this option if this payment method requires your customer to sign a "
-"direct debit mandate with your company."
+"Activate this option if this payment method requires your customer to sign a"
+" direct debit mandate with your company."
 msgstr ""
 "Attivare questa opzione se questo metodo di pagamento richiede che il "
 "cliente firmi un mandato di addebito diretto (SDD) con la vostra azienda."
@@ -100,12 +101,13 @@ msgstr "Donazione da conto ordine di addebito mancante nell'azienda '%s'."
 #: code:addons/donation_direct_debit/models/donation.py:0
 #, python-format
 msgid ""
-"Payment order created automatically upon validation of donation <a href=# "
-"data-oe-model=donation.donation data-oe-id=%(donation_id)d>%(donation)s</a>."
+"Payment order created automatically upon validation of donation <a "
+"href=\"#\" data-oe-model=\"donation.donation\" data-oe-"
+"id=\"%(donation_id)d\">%(donation)s</a>."
 msgstr ""
 "Ordine di pagamento generato automaticamente alla validazione della "
-"donazione <a href=# data-oe-model=donation.donation data-oe-id="
-"%(donation_id)d>%(donation)s</a>."
+"donazione <a href=\"#\" data-oe-model=\"donation.donation\" data-oe-id=\""
+"%(donation_id)d\">%(donation)s</a>."
 
 #. module: donation_direct_debit
 #. odoo-python
@@ -113,8 +115,8 @@ msgstr ""
 #, python-format
 msgid ""
 "The Donation by Debit Order Account of company '%(company)s' must be a "
-"receivable account, but the account '%(account)s' is configured with account "
-"type '%(account_type)s'."
+"receivable account, but the account '%(account)s' is configured with account"
+" type '%(account_type)s'."
 msgstr ""
 "La donazione da conto ordine di addebito della azienda '%(company)s' deve "
 "essere un conto ricevibile, ma il conto '%(account)s' è configurato come "

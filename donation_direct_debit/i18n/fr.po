@@ -4,7 +4,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 8.0\n"
+"Project-Id-Version: Odoo Server 17.0-20240711\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-05-29 23:01+0000\n"
 "PO-Revision-Date: 2015-05-29 23:01+0000\n"
@@ -21,8 +21,9 @@ msgstr ""
 #: code:addons/donation_direct_debit/models/donation.py:0
 #, python-format
 msgid ""
-"A new draft direct debit order <a href=# data-oe-model=account.payment.order "
-"data-oe-id=%(payorder_id)d>%(payorder)s</a> has been automatically created"
+"A new draft direct debit order <a href=\"#\" data-oe-"
+"model=\"account.payment.order\" data-oe-"
+"id=\"%(payorder_id)d\">%(payorder)s</a> has been automatically created"
 msgstr ""
 
 #. module: donation_direct_debit
@@ -30,16 +31,16 @@ msgstr ""
 #: code:addons/donation_direct_debit/models/donation.py:0
 #, python-format
 msgid ""
-"A new payment line has been automatically added to the existing draft direct "
-"debit order <a href=# data-oe-model=account.payment.order data-oe-id="
-"%(payorder_id)d>%(payorder)s</a>."
+"A new payment line has been automatically added to the existing draft direct"
+" debit order <a href=\"#\" data-oe-model=\"account.payment.order\" data-oe-"
+"id=\"%(payorder_id)d\">%(payorder)s</a>."
 msgstr ""
 
 #. module: donation_direct_debit
 #: model:ir.model.fields,help:donation_direct_debit.field_donation_donation__mandate_required
 msgid ""
-"Activate this option if this payment method requires your customer to sign a "
-"direct debit mandate with your company."
+"Activate this option if this payment method requires your customer to sign a"
+" direct debit mandate with your company."
 msgstr ""
 
 #. module: donation_direct_debit
@@ -92,8 +93,9 @@ msgstr ""
 #: code:addons/donation_direct_debit/models/donation.py:0
 #, python-format
 msgid ""
-"Payment order created automatically upon validation of donation <a href=# "
-"data-oe-model=donation.donation data-oe-id=%(donation_id)d>%(donation)s</a>."
+"Payment order created automatically upon validation of donation <a "
+"href=\"#\" data-oe-model=\"donation.donation\" data-oe-"
+"id=\"%(donation_id)d\">%(donation)s</a>."
 msgstr ""
 
 #. module: donation_direct_debit
@@ -102,8 +104,8 @@ msgstr ""
 #, python-format
 msgid ""
 "The Donation by Debit Order Account of company '%(company)s' must be a "
-"receivable account, but the account '%(account)s' is configured with account "
-"type '%(account_type)s'."
+"receivable account, but the account '%(account)s' is configured with account"
+" type '%(account_type)s'."
 msgstr ""
 
 #. module: donation_direct_debit
@@ -134,22 +136,3 @@ msgid ""
 msgstr ""
 "Vous ne pouvez pas annuler un don lié à une ligne de paiement d'un ordre de "
 "prélèvement. Vous devez la supprimer de l'ordre de prélèvement %s."
-
-#, python-format
-#~ msgid "A new draft direct debit order %s has been automatically created"
-#~ msgstr ""
-#~ "Un nouvel ordre de prélèvement brouillon %s a été créé automatiquement"
-
-#, python-format
-#~ msgid ""
-#~ "A new payment line has been automatically added to the existing draft "
-#~ "direct debit order %s"
-#~ msgstr ""
-#~ "Une nouvelle ligne de paiement a été automatiquement ajoutée à l'ordre de "
-#~ "prélèvement brouillon existant %s"
-
-#~ msgid "No valid mandate found for donor %s"
-#~ msgstr "Aucun mandat valide trouvé pour le donateur %s"
-
-#~ msgid "There are 2 payment modes with the same bank journal!"
-#~ msgstr "Il y a 2 modes de paiements liés au même journal de banque !"

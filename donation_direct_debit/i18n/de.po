@@ -19,8 +19,9 @@ msgstr ""
 #: code:addons/donation_direct_debit/models/donation.py:0
 #, python-format
 msgid ""
-"A new draft direct debit order <a href=# data-oe-model=account.payment.order "
-"data-oe-id=%(payorder_id)d>%(payorder)s</a> has been automatically created"
+"A new draft direct debit order <a href=\"#\" data-oe-"
+"model=\"account.payment.order\" data-oe-"
+"id=\"%(payorder_id)d\">%(payorder)s</a> has been automatically created"
 msgstr ""
 
 #. module: donation_direct_debit
@@ -28,16 +29,16 @@ msgstr ""
 #: code:addons/donation_direct_debit/models/donation.py:0
 #, python-format
 msgid ""
-"A new payment line has been automatically added to the existing draft direct "
-"debit order <a href=# data-oe-model=account.payment.order data-oe-id="
-"%(payorder_id)d>%(payorder)s</a>."
+"A new payment line has been automatically added to the existing draft direct"
+" debit order <a href=\"#\" data-oe-model=\"account.payment.order\" data-oe-"
+"id=\"%(payorder_id)d\">%(payorder)s</a>."
 msgstr ""
 
 #. module: donation_direct_debit
 #: model:ir.model.fields,help:donation_direct_debit.field_donation_donation__mandate_required
 msgid ""
-"Activate this option if this payment method requires your customer to sign a "
-"direct debit mandate with your company."
+"Activate this option if this payment method requires your customer to sign a"
+" direct debit mandate with your company."
 msgstr ""
 
 #. module: donation_direct_debit
@@ -90,8 +91,9 @@ msgstr ""
 #: code:addons/donation_direct_debit/models/donation.py:0
 #, python-format
 msgid ""
-"Payment order created automatically upon validation of donation <a href=# "
-"data-oe-model=donation.donation data-oe-id=%(donation_id)d>%(donation)s</a>."
+"Payment order created automatically upon validation of donation <a "
+"href=\"#\" data-oe-model=\"donation.donation\" data-oe-"
+"id=\"%(donation_id)d\">%(donation)s</a>."
 msgstr ""
 
 #. module: donation_direct_debit
@@ -100,8 +102,8 @@ msgstr ""
 #, python-format
 msgid ""
 "The Donation by Debit Order Account of company '%(company)s' must be a "
-"receivable account, but the account '%(account)s' is configured with account "
-"type '%(account_type)s'."
+"receivable account, but the account '%(account)s' is configured with account"
+" type '%(account_type)s'."
 msgstr ""
 
 #. module: donation_direct_debit

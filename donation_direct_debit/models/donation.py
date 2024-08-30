@@ -2,6 +2,7 @@
 # @author: Alexis de Lattre <alexis.delattre@akretion.com>
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
+from markupsafe import Markup
 from odoo import _, api, fields, models
 from odoo.exceptions import UserError
 
@@ -103,39 +104,37 @@ class DonationDonation(models.Model):
                     payorder_vals = donation._prepare_payment_order()
                     payorder = apoo.create(payorder_vals)
                     payorder.message_post(
-                        body=_(
+                        body=Markup(_(
                             "Payment order created automatically upon validation of "
-                            "donation <a href=# data-oe-model=donation.donation "
-                            "data-oe-id=%(donation_id)d>%(donation)s</a>.",
+                            'donation <a href="#" data-oe-model="donation.donation" '
+                            'data-oe-id="%(donation_id)d">%(donation)s</a>.',
                             donation_id=donation.id,
                             donation=donation.display_name,
-                        )
+                        ))
                     )
-                    msg = _(
+                    msg = Markup(_(
                         "A new draft direct debit order "
-                        "<a href=# data-oe-model=account.payment.order "
-                        "data-oe-id=%(payorder_id)d>%(payorder)s</a> "
+                        '<a href="#" data-oe-model="account.payment.order" '
+                        'data-oe-id="%(payorder_id)d">%(payorder)s</a> '
                         "has been automatically created",
                         payorder_id=payorder.id,
                         payorder=payorder.display_name,
-                    )
+                    ))
                 # add payment line
-                payment_account_id = donation._prepare_counterpart_move_line(
-                    1, 1, donation.move_id.journal_id
-                )["account_id"]
+                payment_account_id = donation._prepare_counterpart_move_line(1, 1)["account_id"]
                 for mline in donation.move_id.line_ids:
                     if mline.account_id.id == payment_account_id:
                         mline.sudo().create_payment_line_from_move_line(payorder)
                         break
                 if not msg:
-                    msg = _(
+                    msg = Markup(_(
                         "A new payment line has been automatically added "
                         "to the existing draft direct debit order "
-                        "<a href=# data-oe-model=account.payment.order "
-                        "data-oe-id=%(payorder_id)d>%(payorder)s</a>.",
+                        '<a href="#" data-oe-model="account.payment.order" '
+                        'data-oe-id="%(payorder_id)d">%(payorder)s</a>.',
                         payorder_id=payorder.id,
                         payorder=payorder.display_name,
-                    )
+                    ))
                 donation.message_post(body=msg)
         return res
 
